@@ -1,0 +1,8 @@
+---
+# master配置
+Address: 127.0.0.1:3000
+TelnetPort: 5555
+HttpPort: 8080
+
+
+

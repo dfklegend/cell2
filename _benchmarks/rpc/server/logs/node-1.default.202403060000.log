@@ -1,0 +1,1006 @@
+time=2024-03-06T20:36:34+08:00 level=info msg=found Handler:cmd {Cmd  func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) <func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) Value> 0} source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=found Handler:servicecmd {ServiceCmd  func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.ServiceCmd, apientry.HandlerCBFunc) <func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.ServiceCmd, apientry.HandlerCBFunc) Value> 2} source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=newService:ctrl source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=found Handler:cmd {Cmd  func(*builtin.CtrlEventEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) <func(*builtin.CtrlEventEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) Value> 0} source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=newService:ctrl source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=found Handler:pushmsg {PushMsg  func(*builtin.Entry, *service.RemoteContext, *msgs.PushMsg, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.PushMsg, apientry.HandlerCBFunc) Value> 4} source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=found Handler:pushsession {PushSession  func(*builtin.Entry, *service.RemoteContext, *msgs.PushSession, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.PushSession, apientry.HandlerCBFunc) Value> 5} source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=found Handler:querysession {QuerySession  func(*builtin.Entry, *service.RemoteContext, *msgs.QuerySession, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.QuerySession, apientry.HandlerCBFunc) Value> 6} source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=found Handler:call {Call  func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg, apientry.HandlerCBFunc) Value> 0} source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=found Handler:kick {Kick  func(*builtin.Entry, *service.RemoteContext, *msgs.Kick, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.Kick, apientry.HandlerCBFunc) Value> 2} source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=found Handler:notify {Notify  func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg) <func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg) Value> 3} source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=newService:sys source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=found Handler:hello {Hello  func(*chat.Handler, *impls.HandlerContext, *clientmsg.Hello, apientry.HandlerCBFunc) error <func(*chat.Handler, *impls.HandlerContext, *clientmsg.Hello, apientry.HandlerCBFunc) error Value> 1} source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=newService:chat source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=found Handler:entry {Entry  func(*chat.Entry, *service.RemoteContext, *messages.RoomEntry, apientry.HandlerCBFunc) error <func(*chat.Entry, *service.RemoteContext, *messages.RoomEntry, apientry.HandlerCBFunc) error Value> 1} source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=newService:chatremote source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=found Handler:login {Login  func(*gate.Handler, *impls.HandlerContext, *clientmsg.LoginReq, apientry.HandlerCBFunc) error <func(*gate.Handler, *impls.HandlerContext, *clientmsg.LoginReq, apientry.HandlerCBFunc) error Value> 1} source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=found Handler:querygate {QueryGate  func(*gate.Handler, *impls.HandlerContext, *clientmsg.QueryGateReq, apientry.HandlerCBFunc) error <func(*gate.Handler, *impls.HandlerContext, *clientmsg.QueryGateReq, apientry.HandlerCBFunc) error Value> 2} source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=newService:gate source=default
+time=2024-03-06T20:36:40+08:00 level=info msg= ---- dump all apis ----  source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=  collection: node.admin source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=    apiGroup: ctrl source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=      func cmd source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=      func servicecmd source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=  collection: __sys__ source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=    apiGroup: ctrl source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=      func cmd source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=    apiGroup: sys source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=      func notify source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=      func pushmsg source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=      func pushsession source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=      func querysession source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=      func call source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=      func kick source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=  collection: chat.handler source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=    apiGroup: chat source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=      func hello source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=  collection: chat.remote source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=    apiGroup: chatremote source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=      func entry source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=  collection: gate.handler source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=    apiGroup: gate source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=      func login source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=      func querygate source=default
+time=2024-03-06T20:36:40+08:00 level=info msg= ---- dump over ----  source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=App.Prepare ./testdata/config source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=startnode: node-1 source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=start node node-1 with cluster: benchmark.rpc source=default
+time=2024-03-06T20:36:40+08:00 level=info msg===================================== source=default
+time=2024-03-06T20:36:40+08:00 level=info msg======= Welcome to Cell2 ============ source=default
+time=2024-03-06T20:36:40+08:00 level=info msg===================================== source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=init actorSystem: 127.0.0.1:3011 source=default
+time=2024-03-06T20:36:40+08:00 level=info msg=start connect to ETCDServer: 127.0.0.1:2379 source=default
+time=2024-03-06T20:36:45+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-06T20:36:50+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-06T20:36:55+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-06T20:37:00+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-06T20:37:05+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-06T20:37:10+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-06T20:37:15+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-06T20:37:20+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-06T20:37:24+08:00 level=info msg=Update cluster.{members 3 1  <nil>} source=default
+time=2024-03-06T20:37:24+08:00 level=info msg=-- cluster nodes -- source=default
+time=2024-03-06T20:37:24+08:00 level=info msg=   benchmark.rpc@node-1 source=default
+time=2024-03-06T20:37:24+08:00 level=info msg=updateNodesWithChanges.{changes 3 0  <nil>} source=default
+time=2024-03-06T20:37:24+08:00 level=info msg=etcd start succ! source=default
+time=2024-03-06T20:37:24+08:00 level=info msg=Update cluster.{members 3 1  <nil>} source=default
+time=2024-03-06T20:37:24+08:00 level=info msg=launch over, succ: true
+ source=default
+time=2024-03-06T20:37:24+08:00 level=info msg=-- cluster nodes -- source=default
+time=2024-03-06T20:37:24+08:00 level=info msg=start service: gate-1 source=default
+time=2024-03-06T20:37:24+08:00 level=info msg=   benchmark.rpc@node-1 source=default
+time=2024-03-06T20:37:24+08:00 level=info msg=NewWSAcceptor:127.0.0.1:30011 source=default
+time=2024-03-06T20:37:24+08:00 level=info msg=updateNodesWithChanges.{changes 3 0  <nil>} source=default
+time=2024-03-06T20:37:24+08:00 level=info msg=service start service=gate-1 source=default
+time=2024-03-06T20:37:24+08:00 level=info msg=node ctrl started source=default
+time=2024-03-06T20:37:24+08:00 level=info msg=Update cluster.{members 3 1  <nil>} source=default
+time=2024-03-06T20:37:24+08:00 level=info msg=-- cluster nodes -- source=default
+time=2024-03-06T20:37:24+08:00 level=info msg=   benchmark.rpc@node-1 source=default
+time=2024-03-06T20:37:25+08:00 level=info msg=listening with acceptor *acceptor.WSAcceptor on addr 127.0.0.1:30011 source=default
+time=2024-03-06T20:37:25+08:00 level=info msg=listening with acceptor *acceptor.TCPAcceptor on addr 127.0.0.1:30021 source=default
+time=2024-03-06T20:37:27+08:00 level=info msg=gate-1 has no CtrlEventListener source=default
+time=2024-03-06T20:37:48+08:00 level=info msg=updateNodesWithChanges.{changes 3 1  <nil>} source=default
+time=2024-03-06T20:37:48+08:00 level=info msg=Update cluster.{members 3 2  <nil>} source=default
+time=2024-03-06T20:37:48+08:00 level=info msg=-- cluster nodes -- source=default
+time=2024-03-06T20:37:48+08:00 level=info msg=   benchmark.rpc@node-1 source=default
+time=2024-03-06T20:37:48+08:00 level=info msg=   benchmark.rpc@node-3 source=default
+time=2024-03-06T20:37:48+08:00 level=info msg=updateNodesWithChanges.{changes 3 1  <nil>} source=default
+time=2024-03-06T20:37:48+08:00 level=info msg=Update cluster.{members 3 2  <nil>} source=default
+time=2024-03-06T20:37:48+08:00 level=info msg=-- cluster nodes -- source=default
+time=2024-03-06T20:37:48+08:00 level=info msg=   benchmark.rpc@node-1 source=default
+time=2024-03-06T20:37:48+08:00 level=info msg=   benchmark.rpc@node-3 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=clientsession close 2 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=clientsession close 3 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=clientsession close 4 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=clientsession close 5 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=clientsession close 6 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=clientsession close 7 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=clientsession close 8 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=clientsession close 9 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=clientsession close 10 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:58+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=clientsession close 11 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=clientsession close 13 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=clientsession close 15 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=clientsession close 17 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=clientsession close 19 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=clientsession close 21 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=clientsession close 23 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=clientsession close 25 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=clientsession close 27 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:37:59+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=clientsession close 29 source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=clientsession close 31 source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=clientsession close 33 source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=clientsession close 35 source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=clientsession close 37 source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=clientsession close 39 source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=clientsession close 41 source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:00+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 34 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 42 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 28 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 24 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 16 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 43 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 32 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 26 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 22 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 34 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 42 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 28 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 38 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 36 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 44 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 45 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 47 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 51 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 12 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 49 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 40 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 50 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 20 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 18 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 48 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 30 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 46 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=clientsession close 14 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 24 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=runservice :gate-1  heavy frame <channel:sheduler> do cost: 33 ms  source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 16 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 43 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 32 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 26 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 22 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 38 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 36 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 44 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 45 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 47 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 51 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 12 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 49 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 40 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 50 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 20 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 18 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 48 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 30 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 46 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=routine:69 on session close: gate-1 14 source=default
+time=2024-03-06T20:38:17+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 52 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 54 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 61 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 64 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 65 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 59 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 58 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 55 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 57 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 63 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 56 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 66 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 67 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 62 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 60 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 68 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 70 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 53 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 69 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=clientsession close 71 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:23+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 74 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 72 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 73 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 75 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 76 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52241: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 84 source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52249: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52244: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52252: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52243: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52258: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52239: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52251: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52234: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52248: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52245: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52236: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52256: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52240: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52238: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52247: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52235: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52246: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52253: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52257: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52242: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52250: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52237: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52255: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52254: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 84 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 82 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 79 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 83 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 92 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 100 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 96 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 85 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 87 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 93 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 95 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 97 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 86 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 101 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 94 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 77 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 91 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 88 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 99 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 82 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 78 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 81 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 89 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 80 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 90 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=clientsession close 98 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 79 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 83 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 99 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 92 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 100 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 96 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 85 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 87 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 93 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 95 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 97 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 86 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 101 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 94 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 77 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 91 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 88 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 78 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 81 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 89 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 80 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 90 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=routine:69 on session close: gate-1 98 source=default
+time=2024-03-06T20:38:24+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:43+08:00 level=info msg=clientsession close 102 source=default
+time=2024-03-06T20:38:43+08:00 level=info msg=clientsession close 103 source=default
+time=2024-03-06T20:38:43+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:43+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:43+08:00 level=info msg=clientsession close 104 source=default
+time=2024-03-06T20:38:43+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:43+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:43+08:00 level=info msg=clientsession close 105 source=default
+time=2024-03-06T20:38:43+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:43+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=clientsession close 106 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=clientsession close 107 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=clientsession close 108 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=clientsession close 109 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=clientsession close 110 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=clientsession close 111 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=clientsession close 113 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=clientsession close 115 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=clientsession close 117 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:44+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=clientsession close 119 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=clientsession close 121 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=clientsession close 123 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=clientsession close 125 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=clientsession close 127 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=clientsession close 129 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=clientsession close 131 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=clientsession close 133 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=clientsession close 135 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=clientsession close 137 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:45+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:46+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:46+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:46+08:00 level=info msg=clientsession close 139 source=default
+time=2024-03-06T20:38:46+08:00 level=info msg=clientsession close 141 source=default
+time=2024-03-06T20:38:46+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:46+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:46+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:38:46+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52282: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 116 source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52319: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52313: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52290: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52292: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52318: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52284: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52280: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52278: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52288: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52312: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52301: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52306: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52298: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52320: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52296: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52303: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52311: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52286: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52310: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52321: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52308: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52315: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52294: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52314: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 112 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 150 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 140 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 147 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 128 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 116 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 146 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 145 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 124 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 126 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 148 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 118 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 114 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 149 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 122 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 144 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 134 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 138 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 132 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 130 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 136 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 143 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 120 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 142 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=clientsession close 151 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=runservice :gate-1  heavy frame <channel:sheduler> do cost: 47 ms  source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=runservice :gate-1  skip output heavy frame times: 5 in 10 seconds avg cost: 14 ms source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 112 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 150 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 140 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 147 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 128 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 146 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 145 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 124 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 126 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 148 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 118 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 114 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 149 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 122 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 144 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 134 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 138 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 132 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 130 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 136 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 143 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 120 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 142 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=routine:69 on session close: gate-1 151 source=default
+time=2024-03-06T20:38:59+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:02+08:00 level=info msg=clientsession close 152 source=default
+time=2024-03-06T20:39:02+08:00 level=info msg=clientsession close 153 source=default
+time=2024-03-06T20:39:02+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:02+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:02+08:00 level=info msg=clientsession close 154 source=default
+time=2024-03-06T20:39:02+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:02+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=clientsession close 155 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=clientsession close 156 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=clientsession close 157 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=clientsession close 158 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=clientsession close 159 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=clientsession close 160 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=clientsession close 161 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=clientsession close 163 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=clientsession close 165 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:03+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=clientsession close 167 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=clientsession close 169 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=clientsession close 171 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=clientsession close 173 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=clientsession close 175 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=clientsession close 177 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=clientsession close 179 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=clientsession close 181 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=clientsession close 183 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=clientsession close 185 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:04+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=clientsession close 187 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=clientsession close 189 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=clientsession close 191 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=clientsession close 193 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=clientsession close 195 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=clientsession close 197 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=clientsession close 199 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=clientsession close 201 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=clientsession close 203 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:05+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=clientsession close 205 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=clientsession close 207 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=clientsession close 209 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=clientsession close 211 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=clientsession close 213 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=clientsession close 215 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=clientsession close 217 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=clientsession close 219 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=clientsession close 221 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:06+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=clientsession close 223 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=clientsession close 225 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=clientsession close 227 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=clientsession close 229 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=clientsession close 231 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=clientsession close 233 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=clientsession close 235 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=clientsession close 237 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=clientsession close 239 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:07+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:08+08:00 level=info msg=clientsession close 241 source=default
+time=2024-03-06T20:39:08+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:08+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:08+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-06T20:39:08+08:00 level=info msg=&{Name:haha} source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52345: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 162 source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52423: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52437: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52434: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52391: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52356: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52351: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52353: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52364: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52360: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52429: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52377: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52358: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52368: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52389: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52421: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52395: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52375: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52366: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52434: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52385: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52372: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52362: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52349: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52387: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52347: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52437: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52431: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52383: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52381: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52379: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52409: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52401: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52395: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52415: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52415: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52393: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52413: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52345: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52411: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52397: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52413: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52397: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52347: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52349: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52383: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52435: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52435: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52403: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52438: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52405: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52419: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52436: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52407: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52433: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52407: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 162 source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52417: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52425: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52439: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 234 source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52427: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52432: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Error reading next available message: read tcp 127.0.0.1:30021->127.0.0.1:52440: wsarecv: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 248 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 245 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 204 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 176 source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52377: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 240 source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52423: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 190 source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52432: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52436: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52356: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 198 source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52372: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 200 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 220 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 212 source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52431: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52421: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52387: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52433: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52351: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52427: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52438: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 246 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 214 source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52385: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52375: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 249 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 216 source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52389: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 244 source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52391: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52362: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52409: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52368: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52353: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52401: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52411: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52360: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52358: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52364: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52379: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52381: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52417: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52393: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52429: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52439: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52419: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52440: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52403: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52366: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52425: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=error msg=Failed to write in conn: write tcp 127.0.0.1:30021->127.0.0.1:52405: wsasend: An existing connection was forcibly closed by the remote host. source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 250 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 172 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 168 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 170 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 180 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 174 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 184 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 202 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 232 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 208 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 188 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 182 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 186 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 178 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 166 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 164 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 242 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 196 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 224 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 194 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 192 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 226 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 206 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 222 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 210 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 230 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 247 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 238 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 228 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 236 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 218 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 251 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=clientsession close 243 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=runservice :gate-1  heavy frame <channel:sheduler> do cost: 123 ms  source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=runservice :gate-1  skip output heavy frame times: 1 in 10 seconds avg cost: 1 ms source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 234 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 248 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 245 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 204 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 176 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 240 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 190 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 198 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 200 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 220 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 212 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 196 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 246 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 214 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 249 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 216 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 244 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 250 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 172 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 168 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 170 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 180 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 174 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 184 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 202 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 232 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 208 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 188 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 182 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 186 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 178 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 166 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 164 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 242 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 224 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 194 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 192 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 226 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 206 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 222 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 210 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 230 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 247 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 238 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 228 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 236 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 218 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 251 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=routine:69 on session close: gate-1 243 source=default
+time=2024-03-06T20:39:10+08:00 level=info msg=found chatId: chat-1 source=default
+time=2024-03-06T20:46:01+08:00 level=info msg=updateNodesWithChanges.{changes 3 1  <nil>} source=default
+time=2024-03-06T20:46:01+08:00 level=info msg=Update cluster.{members 3 1  <nil>} source=default
+time=2024-03-06T20:46:01+08:00 level=info msg=-- cluster nodes -- source=default
+time=2024-03-06T20:46:01+08:00 level=info msg=   benchmark.rpc@node-1 source=default
+time=2024-03-06T20:46:06+08:00 level=info msg=updateNodesWithChanges.{changes 3 1  <nil>} source=default
+time=2024-03-06T20:46:06+08:00 level=info msg=Update cluster.{members 3 2  <nil>} source=default
+time=2024-03-06T20:46:06+08:00 level=info msg=-- cluster nodes -- source=default
+time=2024-03-06T20:46:06+08:00 level=info msg=   benchmark.rpc@node-3 source=default
+time=2024-03-06T20:46:06+08:00 level=info msg=   benchmark.rpc@node-1 source=default

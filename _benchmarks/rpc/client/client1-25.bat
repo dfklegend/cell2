@@ -1,0 +1,1 @@
+.\client.exe -speed=1 -reqnum=10000 -clientnum=25

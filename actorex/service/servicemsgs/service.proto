@@ -1,0 +1,44 @@
+syntax = "proto3";
+package servicemsgs;
+option go_package = "github.com/dfklegend/cell2/service/servicemsgs";
+import "actor.proto";
+
+message BaseRequest {
+  actor.PID Sender = 1;
+  int32 ReqId = 2;
+}
+
+message BaseResponse {
+  int32 ReqId = 1;
+  string Result = 2;
+}
+
+message TestRequest {
+  BaseRequest Base = 1;
+  string Content = 2;
+}
+
+message ServiceRequest {
+  actor.PID Sender = 1;   //
+  int32 ReqId = 2;        // 请求id
+  string Route = 3;        // route
+  string Type = 4;        // 数据类型
+  bytes Body = 5;         // 序列化数据
+}
+
+message ServiceResponse {
+  int32 ReqId = 1;
+  string Type = 2;        // 数据类型
+  bytes Body = 3;         // 序列化数据
+  int32 ErrCode = 4;      // 0 - succ
+  string ErrInfo = 5;     // 错误信息
+}
+
+// 用于单元测试
+message TestHello {
+  int32 I = 1;
+  string S = 2;
+}
+
+message EmptyArg {
+}

@@ -1,0 +1,58 @@
+
+---
+nodes:
+  #
+  all-1:
+    StartMode: allinone
+    Address: 127.0.0.1:3001
+    Services:
+      - gate-1
+      - gate-2
+      - chat-1
+      - chat-2
+  node-1:
+    StartMode: common
+    Address: 127.0.0.1:3011
+    Services:
+      - gate-1
+  node-2:
+    StartMode: common
+    Address: 127.0.0.1:3012
+    Services:
+      - gate-2
+  node-3:
+    StartMode: common
+    Address: 127.0.0.1:3013
+    Services:
+      - chat-1
+  node-4:
+    StartMode: common
+    Address: 127.0.0.1:3014
+    Services:
+      - chat-2
+  node-5:
+    StartMode: common
+    Address: 127.0.0.1:3015
+    Services:
+      - chat-3
+
+services:
+  gate-1:
+    Type: gate
+    Frontend: true
+    WSClientAddress: 127.0.0.1:30011
+    ClientAddress: 127.0.0.1:30021
+  gate-2:
+    Type: gate
+    Frontend: true
+    WSClientAddress: 127.0.0.1:30012
+    ClientAddress: 127.0.0.1:30022
+  chat-1:
+    Type: chat
+  chat-2:
+    Type: chat
+  chat-3:
+    Type: chat
+
+
+

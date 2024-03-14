@@ -1,0 +1,58 @@
+---
+nodes:
+  #
+  node-1:
+    StartMode: allinone
+    Address: 127.0.0.1:3001
+    Services:
+      - gate-1
+      - connector-1
+      - connector-2
+      - login-1
+      - chatm-1
+      - chat-1
+      - chat-2
+
+  client-0:
+    StartMode: client
+    Address: 127.0.0.1:3100
+    Services:
+      - gate-1
+      - connector-1
+      - connector-2
+      - login-1
+      - chatm-1
+      - chat-1
+      - chat-2
+
+  client-1:
+    StartMode: client
+    Address: 127.0.0.1:3101
+
+  client-2:
+    StartMode: client
+    Address: 127.0.0.1:3102
+
+services:
+  gate-1:
+    Type: gate
+    Frontend: true
+    ClientAddress: 127.0.0.1:30011
+  connector-1:
+    Type: connector
+    Frontend: true
+    ClientAddress: 127.0.0.1:30021
+  connector-2:
+    Type: connector
+    Frontend: true
+    ClientAddress: 127.0.0.1:30021
+  login-1:
+    Type: login
+  chat-1:
+    Type: chat
+  chat-2:
+    Type: chat
+  chatm-1:
+    Type: chatm
+
+

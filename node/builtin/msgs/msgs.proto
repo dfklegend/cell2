@@ -1,0 +1,79 @@
+syntax = "proto3";
+package nodeclientmsgs;
+option go_package = "github.com/dfklegend/cell2/node/builtin/msgs";
+import "actor.proto";
+
+// 定义__system__接口相关消息
+
+// for test
+message Hello {
+  int32 I = 1;
+}
+
+message Hello1 {
+  string S = 1;
+}
+
+// 客户端消息
+message ClientMsg {
+  string FrontId = 1;
+  uint32 SessionId = 2;
+  // ID binded
+  string ID = 3;
+  // 路由信息
+  string Route = 4;
+  // 客户端请求id，用于Response
+  uint32 ClientReqId = 5;
+  // Data: 消息体
+  bytes Data = 6;
+}
+
+// 主动向客户端推送的消息
+message PushMsg {
+  repeated uint32 Ids = 1;
+  string Route = 2;
+  bytes Data = 3;
+}
+
+message Response {
+  uint32 SessionId = 1;
+  uint32 ClientReqId = 2;
+  bytes Data = 3;
+  string Error = 4;
+}
+
+message PushSession {
+  uint32 SessionId = 1;
+  bytes SessionData = 2;
+}
+
+message Kick {
+  uint32 SessionId = 1;
+}
+
+message QuerySession {
+  uint32 SessionId = 1;
+}
+
+message QuerySessionAck {
+  uint32 SessionId = 1;
+  bytes SessionData = 2;
+}
+
+// --- ctrl event
+message CtrlCmd {
+  string Cmd = 1;
+}
+
+message CtrlCmdAck {
+  string Result = 1;
+}
+
+message ServiceCmd {
+  string Name = 1;
+  string Cmd = 2;
+}
+
+message ServiceCmdAck {
+  string Result = 1;
+}

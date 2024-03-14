@@ -1,0 +1,43 @@
+---
+# 配置节点信息
+nodes:
+  # 所有节点都在一个服务器
+  node-1:
+    StartMode: allinone
+    Address: 127.0.0.1:3001
+    Services:
+      - gate-1
+      - gate-2
+      - chat-1
+      - chat-2
+  # node-11-node-14 独立node
+  node-11:
+    StartMode: gate
+    Address: 127.0.0.1:3001
+    Services:
+      - gate-1
+      - chat-1
+  node-12:
+    StartMode: gate
+    Address: 127.0.0.1:3002
+    Services:
+      - gate-2
+  node-13:
+    StartMode: chat
+    Address: 127.0.0.1:3011
+    Services:
+      - chat-2
+services:
+  gate-1:
+    Type: gate
+    Frontend: true
+    ClientAddress: 127.0.0.1:30011
+  gate-2:
+    Type: gate
+    Frontend: true
+    ClientAddress: 127.0.0.1:30012
+  chat-1:
+    Type: chat
+  chat-2:
+    Type: chat
+

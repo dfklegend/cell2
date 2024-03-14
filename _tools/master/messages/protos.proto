@@ -1,0 +1,16 @@
+syntax = "proto3";
+package messages;
+option go_package = "github.com/dfklegend/cell2/_tools/master/messages";
+import "actor.proto";
+
+message Cmd {
+  string Cmd = 1;
+}
+
+message CmdAck {
+  string Result = 1;
+}
+
+
+
+

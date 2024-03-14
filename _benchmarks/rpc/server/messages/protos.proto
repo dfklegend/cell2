@@ -1,0 +1,149 @@
+syntax = "proto3";
+package messages;
+option go_package = "github.com/dfklegend/cell2/_examples/server/messages";
+import "actor.proto";
+
+message ChatHello {
+  string From = 1;
+}
+
+message ChatHelloRet {
+  string From = 1;
+}
+
+
+// old
+// gate
+message ReqConnector {
+  string X = 1;
+}
+
+message AckConnector {
+  string ConnectorID = 1;
+}
+
+// connector
+message Login {
+  // 名字
+  string Name = 1;
+}
+
+message AckLogin {
+  int32 ID = 1;
+  // chat service ID
+  string ChatServiceId = 2;
+  // 房间id
+  int32 RoomID = 3;
+  // Token
+  int32 Token = 4;
+}
+
+// Connector->LoginService
+message LSLogin {
+  string Name = 1;
+}
+
+message  LSAckLogin {
+  int32  ID = 1;
+}
+
+// connector->ChatMgr
+message CMReqLogin {
+  // 名字
+  string Name = 1;
+  int32 ID = 2;
+}
+
+message CMAckLogin {
+  // chat service ID
+  string ChatServiceId = 1;
+  // 房间id
+  int32 RoomID = 2;
+  // Token
+  int32 Token = 3;
+}
+
+// chatservice
+// chatservice -> chatmgr
+message CSRefreshInfo {
+  string ChatServiceId = 1;
+  int32 RoomNum = 2;
+  int32 PlayerNum = 3;
+}
+
+// 汇报房间状态变化
+message CSRoomStat {
+  int32 RoomID = 1;
+  int32 PlayerNum = 2;
+}
+
+message CSCreateRoom {
+  int32 RoomID = 1;
+  int32 Token = 2;
+}
+
+// 返回
+message CSAckCreateRoom {
+  int32 RoomID = 1;
+  int32 Token = 2;
+}
+
+// client -> chat
+// 请求聊天
+message ReqChat {
+  int32 ID = 1;
+  string Str = 2;
+}
+
+// chat -> client
+message Chat {
+  int32 ID = 1;
+  string Name = 2;
+  string Str = 3;
+}
+
+message ReqJoin {
+  actor.PID Sender = 1;
+  int32 ID = 2;
+  int32 RoomID = 3;
+  int32 Token = 4;
+  string Name = 5;
+}
+// NormalAck
+
+message Ping {
+  int32 ID = 1;
+}
+
+message Nickname {
+  int32 ID = 1;
+  string Name = 2;
+}
+// old over
+
+message NormalAck {
+  int32 Code = 1;
+  string Result = 2;
+}
+
+message RoomEntry {
+  string UId = 1;
+  string Name = 2;
+  string ServerId = 3;
+  uint32 NetId = 4;
+}
+
+message RoomEntryAck {
+  int32 Code = 1;
+  string Result = 2;
+}
+
+message RoomLeave {
+  string UId = 1;
+  string ServerId = 2;
+  uint32 NetId = 3;
+}
+
+
+
+

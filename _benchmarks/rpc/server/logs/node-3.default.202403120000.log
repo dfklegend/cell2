@@ -1,0 +1,91 @@
+time=2024-03-12T14:29:32+08:00 level=info msg=found Handler:cmd {Cmd  func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) <func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) Value> 0} source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=found Handler:servicecmd {ServiceCmd  func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.ServiceCmd, apientry.HandlerCBFunc) <func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.ServiceCmd, apientry.HandlerCBFunc) Value> 2} source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=newService:ctrl source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=found Handler:cmd {Cmd  func(*builtin.CtrlEventEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) <func(*builtin.CtrlEventEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) Value> 0} source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=newService:ctrl source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=found Handler:kick {Kick  func(*builtin.Entry, *service.RemoteContext, *msgs.Kick, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.Kick, apientry.HandlerCBFunc) Value> 2} source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=found Handler:notify {Notify  func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg) <func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg) Value> 3} source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=found Handler:pushmsg {PushMsg  func(*builtin.Entry, *service.RemoteContext, *msgs.PushMsg, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.PushMsg, apientry.HandlerCBFunc) Value> 4} source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=found Handler:pushsession {PushSession  func(*builtin.Entry, *service.RemoteContext, *msgs.PushSession, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.PushSession, apientry.HandlerCBFunc) Value> 5} source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=found Handler:querysession {QuerySession  func(*builtin.Entry, *service.RemoteContext, *msgs.QuerySession, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.QuerySession, apientry.HandlerCBFunc) Value> 6} source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=found Handler:call {Call  func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg, apientry.HandlerCBFunc) Value> 0} source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=newService:sys source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=found Handler:hello {Hello  func(*chat.Handler, *impls.HandlerContext, *clientmsg.Hello, apientry.HandlerCBFunc) error <func(*chat.Handler, *impls.HandlerContext, *clientmsg.Hello, apientry.HandlerCBFunc) error Value> 1} source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=newService:chat source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=found Handler:entry {Entry  func(*chat.Entry, *service.RemoteContext, *messages.RoomEntry, apientry.HandlerCBFunc) error <func(*chat.Entry, *service.RemoteContext, *messages.RoomEntry, apientry.HandlerCBFunc) error Value> 1} source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=newService:chatremote source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=found Handler:login {Login  func(*gate.Handler, *impls.HandlerContext, *clientmsg.LoginReq, apientry.HandlerCBFunc) error <func(*gate.Handler, *impls.HandlerContext, *clientmsg.LoginReq, apientry.HandlerCBFunc) error Value> 1} source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=found Handler:querygate {QueryGate  func(*gate.Handler, *impls.HandlerContext, *clientmsg.QueryGateReq, apientry.HandlerCBFunc) error <func(*gate.Handler, *impls.HandlerContext, *clientmsg.QueryGateReq, apientry.HandlerCBFunc) error Value> 2} source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=newService:gate source=default
+time=2024-03-12T14:29:42+08:00 level=info msg= ---- dump all apis ----  source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=  collection: chat.handler source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=    apiGroup: chat source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=      func hello source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=  collection: chat.remote source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=    apiGroup: chatremote source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=      func entry source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=  collection: gate.handler source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=    apiGroup: gate source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=      func login source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=      func querygate source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=  collection: node.admin source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=    apiGroup: ctrl source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=      func cmd source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=      func servicecmd source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=  collection: __sys__ source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=    apiGroup: ctrl source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=      func cmd source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=    apiGroup: sys source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=      func call source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=      func kick source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=      func notify source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=      func pushmsg source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=      func pushsession source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=      func querysession source=default
+time=2024-03-12T14:29:42+08:00 level=info msg= ---- dump over ----  source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=App.Prepare ./testdata/config source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=startnode: node-3 source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=start node node-3 with cluster: benchmark.rpc source=default
+time=2024-03-12T14:29:42+08:00 level=info msg===================================== source=default
+time=2024-03-12T14:29:42+08:00 level=info msg======= Welcome to Cell2 ============ source=default
+time=2024-03-12T14:29:42+08:00 level=info msg===================================== source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=init actorSystem: 127.0.0.1:3013 source=default
+time=2024-03-12T14:29:42+08:00 level=info msg=start connect to ETCDServer: 127.0.0.1:2379 source=default
+time=2024-03-12T14:29:47+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-12T14:29:52+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-12T14:29:57+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-12T14:30:02+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-12T14:30:07+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-12T14:30:13+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-12T14:30:18+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-12T14:30:23+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-12T14:30:28+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-12T14:30:33+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-12T14:30:38+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-12T14:30:43+08:00 level=warning msg=Please check whether ETCD server is open! source=default
+time=2024-03-12T14:31:38+08:00 level=info msg=Update cluster.{members 3 2  <nil>} source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=-- cluster nodes -- source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=   benchmark.rpc@node-3 source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=   benchmark.rpc@node-1 source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=etcd start succ! source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=updateNodesWithChanges.{changes 3 0  <nil>} source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=launch over, succ: true
+ source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=Update cluster.{members 3 2  <nil>} source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=start service: chat-1 source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=-- cluster nodes -- source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=service start service=chat-1 source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=node ctrl started source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=   benchmark.rpc@node-1 source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=   benchmark.rpc@node-3 source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=updateNodesWithChanges.{changes 3 0  <nil>} source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=Update cluster.{members 3 2  <nil>} source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=-- cluster nodes -- source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=   benchmark.rpc@node-1 source=default
+time=2024-03-12T14:33:08+08:00 level=info msg=   benchmark.rpc@node-3 source=default
+time=2024-03-12T14:33:11+08:00 level=info msg=chat-1 has no CtrlEventListener source=default
+time=2024-03-12T14:33:34+08:00 level=info msg=runservice :chat-1  heavy frame <channel:scheDisp> do cost: 20 ms  source=default
+time=2024-03-12T14:34:34+08:00 level=info msg=runservice :chat-1  heavy frame <channel:scheDisp> do cost: 10 ms  source=default
+time=2024-03-12T14:34:34+08:00 level=info msg=runservice :chat-1  skip output heavy frame times: 1 in 10 seconds avg cost: 34 ms source=default
+time=2024-03-12T14:34:53+08:00 level=info msg=runservice :chat-1  heavy frame <channel:scheDisp> do cost: 11 ms  source=default
+time=2024-03-12T14:34:53+08:00 level=info msg=runservice :chat-1  skip output heavy frame times: 1 in 10 seconds avg cost: 0 ms source=default

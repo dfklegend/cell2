@@ -1,0 +1,26 @@
+go 1.18
+
+use (
+	../modules/protoactor-go-0.2.0
+
+	./apimapper
+	./pomeloclient
+	./pomelonet
+	../cell2/utils
+	../cell2
+
+	./_benchmarks/rpc/client
+	./_benchmarks/rpc/server
+	./_examples/chat2
+	./_examples/chat2-client-go
+	./_examples/chat2-client-go-gui
+	./_examples/chatapi
+	./_examples/simplechat
+	./_examples/test-app
+	./_examples/test-cluster
+	./_examples/test-msg-guaranteed
+	./_examples/test-service
+
+	./_tools/master
+	./_tools/mlrs
+)

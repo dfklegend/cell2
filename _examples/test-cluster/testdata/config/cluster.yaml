@@ -1,0 +1,10 @@
+---
+Enable: true
+NodeCtrl: false
+Name: testcluster
+ETCDServer: 127.0.0.1:2379
+# 未来可以验证一下
+Token: xxxx-xxxx
+
+
+

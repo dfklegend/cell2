@@ -1,0 +1,315 @@
+time=2024-03-14T12:12:22+08:00 level=info source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=-------------------------- source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=-------  app start ------- source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=-------------------------- source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=Start as all-1 source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=found Handler:cmd {Cmd  func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) <func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) Value> 0} source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=found Handler:servicecmd {ServiceCmd  func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.ServiceCmd, apientry.HandlerCBFunc) <func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.ServiceCmd, apientry.HandlerCBFunc) Value> 2} source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=newService:ctrl source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=found Handler:cmd {Cmd  func(*builtin.CtrlEventEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) <func(*builtin.CtrlEventEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) Value> 0} source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=newService:ctrl source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=found Handler:call {Call  func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg, apientry.HandlerCBFunc) Value> 0} source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=found Handler:kick {Kick  func(*builtin.Entry, *service.RemoteContext, *msgs.Kick, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.Kick, apientry.HandlerCBFunc) Value> 2} source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=found Handler:notify {Notify  func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg) <func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg) Value> 3} source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=found Handler:pushmsg {PushMsg  func(*builtin.Entry, *service.RemoteContext, *msgs.PushMsg, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.PushMsg, apientry.HandlerCBFunc) Value> 4} source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=found Handler:pushsession {PushSession  func(*builtin.Entry, *service.RemoteContext, *msgs.PushSession, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.PushSession, apientry.HandlerCBFunc) Value> 5} source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=found Handler:querysession {QuerySession  func(*builtin.Entry, *service.RemoteContext, *msgs.QuerySession, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.QuerySession, apientry.HandlerCBFunc) Value> 6} source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=newService:sys source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=found Handler:sendchat {SendChat  func(*chat.Handler, *impls.HandlerContext, *clientmsg.ChatMsg, apientry.HandlerCBFunc) error <func(*chat.Handler, *impls.HandlerContext, *clientmsg.ChatMsg, apientry.HandlerCBFunc) error Value> 1} source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=newService:chat source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=found Handler:entry {Entry  func(*chat.Entry, *service.RemoteContext, *messages.RoomEntry, apientry.HandlerCBFunc) error <func(*chat.Entry, *service.RemoteContext, *messages.RoomEntry, apientry.HandlerCBFunc) error Value> 1} source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=found Handler:leave {Leave  func(*chat.Entry, *service.RemoteContext, *messages.RoomLeave, apientry.HandlerCBFunc) error <func(*chat.Entry, *service.RemoteContext, *messages.RoomLeave, apientry.HandlerCBFunc) error Value> 2} source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=newService:chatremote source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=found Handler:login {Login  func(*gate.Handler, *impls.HandlerContext, *clientmsg.LoginReq, apientry.HandlerCBFunc) error <func(*gate.Handler, *impls.HandlerContext, *clientmsg.LoginReq, apientry.HandlerCBFunc) error Value> 1} source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=found Handler:querygate {QueryGate  func(*gate.Handler, *impls.HandlerContext, *clientmsg.QueryGateReq, apientry.HandlerCBFunc) error <func(*gate.Handler, *impls.HandlerContext, *clientmsg.QueryGateReq, apientry.HandlerCBFunc) error Value> 2} source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=newService:gate source=default
+time=2024-03-14T12:12:22+08:00 level=info msg= ---- dump all apis ----  source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=  collection: node.admin source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=    apiGroup: ctrl source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=      func cmd source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=      func servicecmd source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=  collection: __sys__ source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=    apiGroup: ctrl source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=      func cmd source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=    apiGroup: sys source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=      func querysession source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=      func call source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=      func kick source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=      func notify source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=      func pushmsg source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=      func pushsession source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=  collection: chat.handler source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=    apiGroup: chat source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=      func sendchat source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=  collection: chat.remote source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=    apiGroup: chatremote source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=      func entry source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=      func leave source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=  collection: gate.handler source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=    apiGroup: gate source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=      func login source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=      func querygate source=default
+time=2024-03-14T12:12:22+08:00 level=info msg= ---- dump over ----  source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=App.Prepare ./testdata/config source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=startnode: all-1 source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=start node all-1 with cluster: chat2 source=default
+time=2024-03-14T12:12:22+08:00 level=info msg===================================== source=default
+time=2024-03-14T12:12:22+08:00 level=info msg======= Welcome to Cell2 ============ source=default
+time=2024-03-14T12:12:22+08:00 level=info msg===================================== source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=init actorSystem: 127.0.0.1:3001 source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=    use self cluster     source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=-- cluster nodes -- source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=   chat2@all-1 source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=launch over, succ: true
+ source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=start service: gate-1 source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=NewWSAcceptor:127.0.0.1:30011 source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=start service: gate-2 source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=service start service=gate-1 source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=NewWSAcceptor:127.0.0.1:30012 source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=start service: chat-1 source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=service start service=gate-2 source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=start service: chat-2 source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=service start service=chat-1 source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=service start service=chat-2 source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=node ctrl started source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=register cmd:retire source=default
+time=2024-03-14T12:12:22+08:00 level=info msg=register cmd:exit source=default
+time=2024-03-14T12:12:23+08:00 level=info msg=listening with acceptor *acceptor.WSAcceptor on addr 127.0.0.1:30011 source=default
+time=2024-03-14T12:12:23+08:00 level=info msg=listening with acceptor *acceptor.TCPAcceptor on addr 127.0.0.1:30021 source=default
+time=2024-03-14T12:12:23+08:00 level=info msg=listening with acceptor *acceptor.TCPAcceptor on addr 127.0.0.1:30022 source=default
+time=2024-03-14T12:12:23+08:00 level=info msg=listening with acceptor *acceptor.WSAcceptor on addr 127.0.0.1:30012 source=default
+time=2024-03-14T12:13:19+08:00 level=info source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=-------------------------- source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=-------  app start ------- source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=-------------------------- source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=Start as all-1 source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=found Handler:entry {Entry  func(*chat.Entry, *service.RemoteContext, *messages.RoomEntry, apientry.HandlerCBFunc) error <func(*chat.Entry, *service.RemoteContext, *messages.RoomEntry, apientry.HandlerCBFunc) error Value> 1} source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=found Handler:leave {Leave  func(*chat.Entry, *service.RemoteContext, *messages.RoomLeave, apientry.HandlerCBFunc) error <func(*chat.Entry, *service.RemoteContext, *messages.RoomLeave, apientry.HandlerCBFunc) error Value> 2} source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=newService:chatremote source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=found Handler:login {Login  func(*gate.Handler, *impls.HandlerContext, *clientmsg.LoginReq, apientry.HandlerCBFunc) error <func(*gate.Handler, *impls.HandlerContext, *clientmsg.LoginReq, apientry.HandlerCBFunc) error Value> 1} source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=found Handler:querygate {QueryGate  func(*gate.Handler, *impls.HandlerContext, *clientmsg.QueryGateReq, apientry.HandlerCBFunc) error <func(*gate.Handler, *impls.HandlerContext, *clientmsg.QueryGateReq, apientry.HandlerCBFunc) error Value> 2} source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=newService:gate source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=found Handler:cmd {Cmd  func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) <func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) Value> 0} source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=found Handler:servicecmd {ServiceCmd  func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.ServiceCmd, apientry.HandlerCBFunc) <func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.ServiceCmd, apientry.HandlerCBFunc) Value> 2} source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=newService:ctrl source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=found Handler:cmd {Cmd  func(*builtin.CtrlEventEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) <func(*builtin.CtrlEventEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) Value> 0} source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=newService:ctrl source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=found Handler:pushmsg {PushMsg  func(*builtin.Entry, *service.RemoteContext, *msgs.PushMsg, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.PushMsg, apientry.HandlerCBFunc) Value> 4} source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=found Handler:pushsession {PushSession  func(*builtin.Entry, *service.RemoteContext, *msgs.PushSession, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.PushSession, apientry.HandlerCBFunc) Value> 5} source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=found Handler:querysession {QuerySession  func(*builtin.Entry, *service.RemoteContext, *msgs.QuerySession, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.QuerySession, apientry.HandlerCBFunc) Value> 6} source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=found Handler:call {Call  func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg, apientry.HandlerCBFunc) Value> 0} source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=found Handler:kick {Kick  func(*builtin.Entry, *service.RemoteContext, *msgs.Kick, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.Kick, apientry.HandlerCBFunc) Value> 2} source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=found Handler:notify {Notify  func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg) <func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg) Value> 3} source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=newService:sys source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=found Handler:sendchat {SendChat  func(*chat.Handler, *impls.HandlerContext, *clientmsg.ChatMsg, apientry.HandlerCBFunc) error <func(*chat.Handler, *impls.HandlerContext, *clientmsg.ChatMsg, apientry.HandlerCBFunc) error Value> 1} source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=newService:chat source=default
+time=2024-03-14T12:13:19+08:00 level=info msg= ---- dump all apis ----  source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=  collection: node.admin source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=    apiGroup: ctrl source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=      func cmd source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=      func servicecmd source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=  collection: __sys__ source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=    apiGroup: ctrl source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=      func cmd source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=    apiGroup: sys source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=      func kick source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=      func notify source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=      func pushmsg source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=      func pushsession source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=      func querysession source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=      func call source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=  collection: chat.handler source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=    apiGroup: chat source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=      func sendchat source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=  collection: chat.remote source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=    apiGroup: chatremote source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=      func entry source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=      func leave source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=  collection: gate.handler source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=    apiGroup: gate source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=      func login source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=      func querygate source=default
+time=2024-03-14T12:13:19+08:00 level=info msg= ---- dump over ----  source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=App.Prepare ./testdata/config source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=startnode: all-1 source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=start node all-1 with cluster: chat2 source=default
+time=2024-03-14T12:13:19+08:00 level=info msg===================================== source=default
+time=2024-03-14T12:13:19+08:00 level=info msg======= Welcome to Cell2 ============ source=default
+time=2024-03-14T12:13:19+08:00 level=info msg===================================== source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=init actorSystem: 127.0.0.1:3001 source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=    use self cluster     source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=-- cluster nodes -- source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=   chat2@all-1 source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=launch over, succ: true
+ source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=start service: gate-1 source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=NewWSAcceptor:127.0.0.1:30011 source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=start service: gate-2 source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=service start service=gate-1 source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=NewWSAcceptor:127.0.0.1:30012 source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=start service: chat-1 source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=service start service=gate-2 source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=start service: chat-2 source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=service start service=chat-1 source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=service start service=chat-2 source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=node ctrl started source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=register cmd:retire source=default
+time=2024-03-14T12:13:19+08:00 level=info msg=register cmd:exit source=default
+time=2024-03-14T12:13:20+08:00 level=info msg=listening with acceptor *acceptor.TCPAcceptor on addr 127.0.0.1:30022 source=default
+time=2024-03-14T12:13:20+08:00 level=info msg=listening with acceptor *acceptor.WSAcceptor on addr 127.0.0.1:30011 source=default
+time=2024-03-14T12:13:20+08:00 level=info msg=listening with acceptor *acceptor.TCPAcceptor on addr 127.0.0.1:30021 source=default
+time=2024-03-14T12:13:20+08:00 level=info msg=listening with acceptor *acceptor.WSAcceptor on addr 127.0.0.1:30012 source=default
+time=2024-03-14T12:13:22+08:00 level=info msg=chat-2 has no CtrlEventListener source=default
+time=2024-03-14T12:13:22+08:00 level=info msg=gate-2 has no CtrlEventListener source=default
+time=2024-03-14T12:13:22+08:00 level=info msg=chat-1 has no CtrlEventListener source=default
+time=2024-03-14T12:13:22+08:00 level=info msg=gate-1 has no CtrlEventListener source=default
+time=2024-03-14T12:13:42+08:00 level=error msg=Error reading next available message: websocket: close 1005 (no status) source=default
+time=2024-03-14T12:13:42+08:00 level=info msg=clientsession close 2 source=default
+time=2024-03-14T12:13:42+08:00 level=info msg=login in gate-2 source=default
+time=2024-03-14T12:13:42+08:00 level=info msg=&{Name:guest1710389622865} source=default
+time=2024-03-14T12:13:42+08:00 level=info msg=entry in chat-2
+ source=default
+time=2024-03-14T12:13:42+08:00 level=info msg=msg: UId:"uid-gate-2-2" Name:"guest1710389622865" ServerId:"gate-2" NetId:2
+ source=default
+time=2024-03-14T12:13:46+08:00 level=info msg=SendChat in chat-2
+ source=default
+time=2024-03-14T12:13:46+08:00 level=info msg=msg: &{Name:guest1710389622865 Content:fff}
+ source=default
+time=2024-03-14T12:13:46+08:00 level=info msg=before query sessionData: {"_ID":"uid-gate-2-2"} source=default
+time=2024-03-14T12:13:46+08:00 level=info msg=query session ret source=default
+time=2024-03-14T12:13:46+08:00 level=info msg=sessionData: {"_ID":"uid-gate-2-2","_NetId":2,"_ServerId":"gate-2","chatid":"chat-2","testindex":1} source=default
+time=2024-03-14T12:13:47+08:00 level=info msg=SendChat in chat-2
+ source=default
+time=2024-03-14T12:13:47+08:00 level=info msg=msg: &{Name:guest1710389622865 Content:fff}
+ source=default
+time=2024-03-14T12:13:47+08:00 level=info msg=before query sessionData: {"_ID":"uid-gate-2-2"} source=default
+time=2024-03-14T12:13:47+08:00 level=info msg=query session ret source=default
+time=2024-03-14T12:13:47+08:00 level=info msg=sessionData: {"_ID":"uid-gate-2-2","_NetId":2,"_ServerId":"gate-2","chatid":"chat-2","testindex":2} source=default
+time=2024-03-14T12:13:53+08:00 level=error msg=Error reading next available message: websocket: close 1005 (no status) source=default
+time=2024-03-14T12:13:53+08:00 level=info msg=clientsession close 3 source=default
+time=2024-03-14T12:13:53+08:00 level=info msg=login in gate-1 source=default
+time=2024-03-14T12:13:53+08:00 level=info msg=&{Name:guest1710389633287} source=default
+time=2024-03-14T12:13:53+08:00 level=info msg=entry in chat-2
+ source=default
+time=2024-03-14T12:13:53+08:00 level=info msg=msg: UId:"uid-gate-1-4" Name:"guest1710389633287" ServerId:"gate-1" NetId:4
+ source=default
+time=2024-03-14T12:13:58+08:00 level=info msg=SendChat in chat-2
+ source=default
+time=2024-03-14T12:13:58+08:00 level=info msg=msg: &{Name:guest1710389633287 Content:fff}
+ source=default
+time=2024-03-14T12:13:58+08:00 level=info msg=before query sessionData: {"_ID":"uid-gate-1-4"} source=default
+time=2024-03-14T12:13:58+08:00 level=info msg=query session ret source=default
+time=2024-03-14T12:13:58+08:00 level=info msg=sessionData: {"_ID":"uid-gate-1-4","_NetId":4,"_ServerId":"gate-1","chatid":"chat-2","testindex":3} source=default
+time=2024-03-14T12:14:01+08:00 level=info msg=SendChat in chat-2
+ source=default
+time=2024-03-14T12:14:01+08:00 level=info msg=msg: &{Name:guest1710389622865 Content:dddd}
+ source=default
+time=2024-03-14T12:14:01+08:00 level=info msg=before query sessionData: {"_ID":"uid-gate-2-2"} source=default
+time=2024-03-14T12:14:01+08:00 level=info msg=query session ret source=default
+time=2024-03-14T12:14:01+08:00 level=info msg=sessionData: {"_ID":"uid-gate-2-2","_NetId":2,"_ServerId":"gate-2","chatid":"chat-2","testindex":4} source=default
+time=2024-03-14T13:07:55+08:00 level=error msg=Error reading next available message: websocket: close 1006 (abnormal closure): unexpected EOF source=default
+time=2024-03-14T13:07:55+08:00 level=error msg=Error reading next available message: websocket: close 1006 (abnormal closure): unexpected EOF source=default
+time=2024-03-14T13:07:55+08:00 level=info msg=clientsession close 2 source=default
+time=2024-03-14T13:07:55+08:00 level=info msg=clientsession close 4 source=default
+time=2024-03-14T13:07:55+08:00 level=info msg=routine:58 on session close: gate-2 2 source=default
+time=2024-03-14T13:07:55+08:00 level=info msg=routine:51 on session close: gate-1 4 source=default
+time=2024-03-14T13:07:55+08:00 level=info msg=found chatId: chat-2 source=default
+time=2024-03-14T13:07:55+08:00 level=info msg=found chatId: chat-2 source=default
+time=2024-03-14T13:07:55+08:00 level=info msg=leave in chat-2
+ source=default
+time=2024-03-14T13:07:55+08:00 level=info msg=msg: UId:"uid-gate-2-2" ServerId:"gate-2" NetId:2
+ source=default
+time=2024-03-14T13:07:55+08:00 level=info msg=leave in chat-2
+ source=default
+time=2024-03-14T13:07:55+08:00 level=error msg=skipped session missed log: 0 source=default
+time=2024-03-14T13:07:55+08:00 level=info msg=chatremote.leave ret source=default
+time=2024-03-14T13:07:55+08:00 level=info msg=msg: UId:"uid-gate-1-4" ServerId:"gate-1" NetId:4
+ source=default
+time=2024-03-14T13:07:55+08:00 level=error msg=can not find session: 4 onUserLeave source=default
+time=2024-03-14T13:07:55+08:00 level=info msg=chatremote.leave ret source=default
+time=2024-03-14T13:43:38+08:00 level=info source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=-------------------------- source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=-------  app start ------- source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=-------------------------- source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=Start as all-1 source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=found Handler:cmd {Cmd  func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) <func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) Value> 0} source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=found Handler:servicecmd {ServiceCmd  func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.ServiceCmd, apientry.HandlerCBFunc) <func(*nodectrl.AdminEntry, *service.RemoteContext, *msgs.ServiceCmd, apientry.HandlerCBFunc) Value> 2} source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=newService:ctrl source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=found Handler:cmd {Cmd  func(*builtin.CtrlEventEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) <func(*builtin.CtrlEventEntry, *service.RemoteContext, *msgs.CtrlCmd, apientry.HandlerCBFunc) Value> 0} source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=newService:ctrl source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=found Handler:call {Call  func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg, apientry.HandlerCBFunc) Value> 0} source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=found Handler:kick {Kick  func(*builtin.Entry, *service.RemoteContext, *msgs.Kick, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.Kick, apientry.HandlerCBFunc) Value> 2} source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=found Handler:notify {Notify  func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg) <func(*builtin.Entry, *service.RemoteContext, *msgs.ClientMsg) Value> 3} source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=found Handler:pushmsg {PushMsg  func(*builtin.Entry, *service.RemoteContext, *msgs.PushMsg, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.PushMsg, apientry.HandlerCBFunc) Value> 4} source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=found Handler:pushsession {PushSession  func(*builtin.Entry, *service.RemoteContext, *msgs.PushSession, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.PushSession, apientry.HandlerCBFunc) Value> 5} source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=found Handler:querysession {QuerySession  func(*builtin.Entry, *service.RemoteContext, *msgs.QuerySession, apientry.HandlerCBFunc) <func(*builtin.Entry, *service.RemoteContext, *msgs.QuerySession, apientry.HandlerCBFunc) Value> 6} source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=newService:sys source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=found Handler:sendchat {SendChat  func(*chat.Handler, *impls.HandlerContext, *clientmsg.ChatMsg, apientry.HandlerCBFunc) error <func(*chat.Handler, *impls.HandlerContext, *clientmsg.ChatMsg, apientry.HandlerCBFunc) error Value> 1} source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=newService:chat source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=found Handler:entry {Entry  func(*chat.Entry, *service.RemoteContext, *messages.RoomEntry, apientry.HandlerCBFunc) error <func(*chat.Entry, *service.RemoteContext, *messages.RoomEntry, apientry.HandlerCBFunc) error Value> 1} source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=found Handler:leave {Leave  func(*chat.Entry, *service.RemoteContext, *messages.RoomLeave, apientry.HandlerCBFunc) error <func(*chat.Entry, *service.RemoteContext, *messages.RoomLeave, apientry.HandlerCBFunc) error Value> 2} source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=newService:chatremote source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=found Handler:login {Login  func(*gate.Handler, *impls.HandlerContext, *clientmsg.LoginReq, apientry.HandlerCBFunc) error <func(*gate.Handler, *impls.HandlerContext, *clientmsg.LoginReq, apientry.HandlerCBFunc) error Value> 1} source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=found Handler:querygate {QueryGate  func(*gate.Handler, *impls.HandlerContext, *clientmsg.QueryGateReq, apientry.HandlerCBFunc) error <func(*gate.Handler, *impls.HandlerContext, *clientmsg.QueryGateReq, apientry.HandlerCBFunc) error Value> 2} source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=newService:gate source=default
+time=2024-03-14T13:43:38+08:00 level=info msg= ---- dump all apis ----  source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=  collection: __sys__ source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=    apiGroup: ctrl source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=      func cmd source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=    apiGroup: sys source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=      func querysession source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=      func call source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=      func kick source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=      func notify source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=      func pushmsg source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=      func pushsession source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=  collection: chat.handler source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=    apiGroup: chat source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=      func sendchat source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=  collection: chat.remote source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=    apiGroup: chatremote source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=      func leave source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=      func entry source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=  collection: gate.handler source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=    apiGroup: gate source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=      func querygate source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=      func login source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=  collection: node.admin source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=    apiGroup: ctrl source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=      func cmd source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=      func servicecmd source=default
+time=2024-03-14T13:43:38+08:00 level=info msg= ---- dump over ----  source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=App.Prepare ./testdata/config source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=startnode: all-1 source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=start node all-1 with cluster: chat2 source=default
+time=2024-03-14T13:43:38+08:00 level=info msg===================================== source=default
+time=2024-03-14T13:43:38+08:00 level=info msg======= Welcome to Cell2 ============ source=default
+time=2024-03-14T13:43:38+08:00 level=info msg===================================== source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=init actorSystem: 127.0.0.1:3001 source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=    use self cluster     source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=-- cluster nodes -- source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=   chat2@all-1 source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=launch over, succ: true
+ source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=start service: gate-1 source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=NewWSAcceptor:127.0.0.1:30011 source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=start service: gate-2 source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=service start service=gate-1 source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=NewWSAcceptor:127.0.0.1:30012 source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=start service: chat-1 source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=service start service=gate-2 source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=start service: chat-2 source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=service start service=chat-1 source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=service start service=chat-2 source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=node ctrl started source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=register cmd:retire source=default
+time=2024-03-14T13:43:38+08:00 level=info msg=register cmd:exit source=default
+time=2024-03-14T13:43:39+08:00 level=info msg=listening with acceptor *acceptor.WSAcceptor on addr 127.0.0.1:30012 source=default
+time=2024-03-14T13:43:39+08:00 level=info msg=listening with acceptor *acceptor.WSAcceptor on addr 127.0.0.1:30011 source=default
+time=2024-03-14T13:43:39+08:00 level=info msg=listening with acceptor *acceptor.TCPAcceptor on addr 127.0.0.1:30022 source=default
+time=2024-03-14T13:43:39+08:00 level=info msg=listening with acceptor *acceptor.TCPAcceptor on addr 127.0.0.1:30021 source=default
+time=2024-03-14T13:43:41+08:00 level=info msg=chat-2 has no CtrlEventListener source=default
+time=2024-03-14T13:43:41+08:00 level=info msg=gate-1 has no CtrlEventListener source=default
+time=2024-03-14T13:43:41+08:00 level=info msg=gate-2 has no CtrlEventListener source=default
+time=2024-03-14T13:43:41+08:00 level=info msg=chat-1 has no CtrlEventListener source=default

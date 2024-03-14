@@ -1,0 +1,2 @@
+time=2024-03-14T14:07:42+08:00 level=info msg=hello! source=default
+time=2024-03-14T14:07:42+08:00 level=error msg=error! source=default

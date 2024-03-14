@@ -1,0 +1,6 @@
+﻿ID,名称备注,装备类型,,,minDmg,maxDmg,格挡值,属性0,值,属性1,值,属性2,值,属性3,值
+id,,eType,baseType,speed,minDmg,maxDmg,block,attr0,value0,attr1,value1,attr2,value2,attr3,value3
+"短""1""剑_1",短剑,0,SingleHand,2,5,12,0,力量,8,"耐力,%",0.5,,,,
+匕首_1,匕首,0,SingleHand,1.5,2,6,0,敏捷,8,物暴点数,50,,,,
+木棍_1,双手木棍,0,DoubleHand,3,10,30,0,力量,8,"耐力,%",0.2,,,,
+盾牌_1,,,Shield,0,0,0,10,耐力,8,"耐力,%",0.2,,,,
