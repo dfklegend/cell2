@@ -13,7 +13,7 @@ type Handler struct {
 	Input chan *sessionInput
 }
 
-func NewHandler() *Handler {
+func NewTelnetHandler() *Handler {
 	return &Handler{
 		Input: make(chan *sessionInput, 9),
 	}

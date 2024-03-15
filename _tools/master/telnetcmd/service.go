@@ -33,7 +33,7 @@ type Service struct {
 func NewService() *Service {
 	s := &Service{
 		Service: service.NewService(),
-		handler: NewHandler(),
+		handler: NewTelnetHandler(),
 	}
 
 	s.Service.InitReqReceiver(s)
