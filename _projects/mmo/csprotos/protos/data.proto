@@ -1,0 +1,31 @@
+syntax = "proto3";
+package cproto;
+option go_package = "mmo/messages/cproto";
+
+
+// 定义数据结构，可以暂时共用的
+message SkillSlot {
+  string SkillId = 1;
+  int32 Level = 2;
+}
+
+message EquipSlot {
+  string EquipId = 1;
+}
+
+// 统计数据
+message StatInfo {
+  int32 Win = 1;
+  int32 Total = 2;
+}
+
+message CharCard {
+  int32 Id = 1;
+  string Name = 2;
+  int32 Level = 3;
+  SkillSlot NormalSkill = 4;
+  repeated SkillSlot Skills = 5;
+  repeated SkillSlot passiveSkills = 6;
+  repeated EquipSlot Equips = 7;
+  StatInfo Stat = 8;
+}

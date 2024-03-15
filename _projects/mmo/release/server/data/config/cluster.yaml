@@ -1,0 +1,9 @@
+---
+Enable: true
+Name: cardfightcommon
+ETCDServer: 172.16.9.19:2379
+# 未来可以验证一下
+Token: xxxx-xxxx
+
+
+

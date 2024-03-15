@@ -1,0 +1,4 @@
+﻿ID,名字,名称备注,基准level,等级,武器速度,,,minDmg,最小伤害等级成长,maxDmg,成长,,,,
+id,name,,baseLevel,level,weaponSpeed,guardRange,attackRange,minDmg,minDmgLv,maxDmg,maxDmgLv,hp,hpLv,armor,armorLv
+狗头人lv5,狗头人,5-30级,5,5,3,6,5,2,1,10,1,100,50,50,85
+熊lv5,熊,5-30级,5,5,3.5,8,2,5,1,15,1,100,100,100,85

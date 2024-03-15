@@ -1,0 +1,9 @@
+---
+monsters:
+  - {Id: 狗头人lv1}
+  - {Id: 熊lv1}
+exits:
+  - {X: 6, Z: 0, Radius: 2, To: 101, ToX: -6, ToZ: 0}
+
+
+

@@ -1,0 +1,2 @@
+[main]
+updateroot=http://xxx.com/update

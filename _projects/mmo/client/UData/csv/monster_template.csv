@@ -1,0 +1,5 @@
+﻿ID,武器速度,,,minDmg,最小伤害等级成长,maxDmg,成长,,,,
+id,weaponSpeed,guardRange,attackRange,minDmg,minDmgLv,maxDmg,maxDmgLv,hp,hpLv,armor,armorLv
+狗头人,3,6,5,2,1,10,1,30,50,1,1
+熊,3.5,8,2,5,1,15,1,100,100,5,2.2
+近战,3,6,5,2,1,10,1,30,50,1,1

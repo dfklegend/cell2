@@ -1,0 +1,297 @@
+syntax = "proto3";
+package cproto;
+option go_package = "mmo/messages/cproto";
+
+import "data.proto";
+
+message EmptyArgReq {
+}
+
+message EmptyArg {
+}
+
+message NormalAck {
+  int32 Code = 1;
+  string Err = 2;
+}
+
+message NormalBoolAck {
+  bool Succ = 1;
+}
+
+message QueryGateReq {
+}
+
+message QueryGateAck {
+  int32 Code = 1;
+  string IP = 2;
+  string Port = 3;
+}
+
+message LoginReq {
+  string Username = 1;
+  string Password = 2;
+}
+
+message LoginAck {
+  int32 Code = 1;
+  int64 UId = 2;
+  bool IsReconnect = 3; // 重连
+}
+
+// 服务器踢人
+message Kick {
+  string Reason = 1;
+}
+
+message StartGame {
+  int32 DownCard = 1;
+  int32 UpCard = 2;
+}
+
+message CharInfo {
+  string Name = 1;
+  int32 Level = 2;
+  int64 Exp = 3;
+  int64 Money = 4;
+  repeated CharCard Cards = 5;
+}
+
+message BattleLog {
+  string Log = 1;
+}
+
+message LoadScene {
+  string ServerId = 1;
+  int32 CfgId = 2;
+  uint64 SceneId = 3;
+}
+
+message ClientLoadSceneOver {
+  int64 UId = 1;
+  uint64 SceneId = 2;
+}
+
+// client Load Over后
+// 返回这个消息，便于识别avatar
+message AvatarEnter {
+  int32 Id = 1;
+}
+
+message Vector3 {
+  float X = 1;
+  float Y = 2;
+  float Z = 3;
+}
+
+// 快照
+message TestSnapshot {
+  int32 Id = 1;
+  Vector3 Pos = 2;
+  int32 HP = 3;
+  int32 HPMax = 4;
+  string Name = 5;
+  int32 Side = 6;
+}
+
+// 怪物
+message MonsterSnapshot {
+  int32 Id = 1;
+  Vector3 Pos = 2;
+  int32 HP = 3;
+  int32 HPMax = 4;
+  string Name = 5;
+  int32 Side = 6;
+  string CfgId = 7;
+}
+
+// 出口，传送点
+message ExitSnapshot {
+  int32 Id = 1;
+  Vector3 Pos = 2;
+  float Radius = 3;
+}
+
+// 移动消息
+message MoveTo {
+  int32 Id = 1;
+  Vector3 Tar = 2;
+}
+
+message Attack {
+  int32 Id = 1;
+  int32 Tar = 2;
+  int32 Dmg = 3;
+  int32 HPTar = 4;
+}
+
+message StartSklill {
+  int32 Id = 1;
+  string SkillId = 2;
+  int32 Tar = 3;
+}
+
+message SkillHit {
+  int32 Id = 1;
+  string SkillId = 2;
+  int32 Tar = 3;
+  int32 Dmg = 4;
+  int32 HPTar = 5;
+  bool Critical = 6;
+}
+
+message SkillBroken {
+  int32 Id = 1;
+  string SkillId = 2;
+}
+
+// 对象消失(死亡或者离开视野)
+message UnitLeave {
+  int32 Id = 1;
+}
+
+// 复活
+message UnitRelive {
+  int32 Id = 1;
+  int32 HP = 2;
+}
+
+// Cmd
+// 客户端发送命令到服务器
+message Cmd {
+  string Cmd = 1;
+}
+
+message CmdAck {
+  string Result = 1;
+}
+
+// charcard
+message RefreshCards {
+  repeated CharCard Cards = 1;
+}
+
+// cardfight
+message ReqSelfCardFight {
+  int32 upId = 1;
+  int32 downId = 2;
+}
+
+// client -> server
+message ReqSystemCmd {
+  string system = 1;
+  string cmd = 2;
+  // 序列化
+  bytes args = 3;
+}
+
+// server -> client
+message AckSystemCmd {
+  int32 code = 1;
+  // 序列化
+  bytes ret = 2;
+}
+
+// server -> client
+message ServerSystemCmd {
+  string system = 1;
+  string cmd = 2;
+  // 序列化
+  bytes args = 3;
+}
+
+// cmds
+message TestAdd {
+  int32 i = 1;
+  int32 j = 2;
+}
+
+message TestAddRet {
+  int32 result = 1;
+}
+
+// charCard system cmd
+message OpenCard {
+  int32 Id = 1;
+}
+
+message CardSetEquip {
+  int32 Index = 1;
+  string Id = 2;
+}
+// -> EmptyArg
+
+message CardSetSkill {
+  int32 Index = 1;
+  string Id = 2;
+  int32 Level = 3;
+}
+
+// EmptyArg
+
+
+
+// charCard system cmd
+
+
+// cmds end
+
+// 同步的属性
+message CardAttr {
+  int32 Index = 1;
+  float Value = 2;
+}
+
+message CardAttrs {
+  repeated CardAttr Attrs = 1;
+}
+
+message  UnitAttrsChanged {
+  int32 Id = 1;
+  repeated CardAttr Attrs = 2;
+}
+
+//
+message ReqMoveTo {
+  float X = 1;
+  float Z = 2;
+}
+
+message ReqStopMove {
+  float X = 1;
+  float Z = 2;
+}
+
+// 系统信息
+message SystemInfo {
+  string Info = 1;
+  int32 Type = 2;
+}
+
+// DaySign 下发数据
+message DaySign {
+  bool Signed = 1;
+}
+
+// 统一的属性同步消息
+message IntAttr {
+  int32 Index = 1;
+  int32 Value = 2;
+}
+
+message FloatAttr {
+  int32 Index = 1;
+  float Value = 2;
+}
+
+message Int64Attr {
+  int32 Index = 1;
+  int64 Value = 2;
+}
+
+message  AttrsChanged {
+  int32 Id = 1;
+  repeated IntAttr Ints = 2;
+  repeated FloatAttr Floats = 3;
+  repeated IntAttr Int64s = 4;
+}

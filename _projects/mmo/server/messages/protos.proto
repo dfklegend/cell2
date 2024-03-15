@@ -1,0 +1,298 @@
+syntax = "proto3";
+package messages;
+option go_package = "github.com/dfklegend/cell2/_examples/mmo/messages";
+
+import "data.proto";
+import "playerinfo.proto";
+
+message ChatHello {
+  string From = 1;
+}
+
+message ChatHelloRet {
+  string From = 1;
+}
+
+message NormalAck {
+  int32 Code = 1;
+  string Error = 2;
+}
+
+// ---- login & logout ----
+// db, redisservice
+message DBAuth {
+  string Username = 1;
+  string Password = 2;
+}
+
+// db, redisservice
+message DBAuthAck {
+  int64 UId = 1;
+  int32 Code = 2;
+  string Err = 3;
+}
+
+// TODO: 后续player的解析可以推迟到具体逻辑服务，这样中间传递可以省一些序列化流程
+message DBLoadPlayer {
+  int64 UId = 1;
+}
+
+message DBLoadPlayerAck {
+  int64 UId = 1;
+  PlayerInfo Info = 2;
+  bool NewPlayer = 3;
+}
+
+message DBSavePlayer {
+  PlayerInfo Info = 1;
+}
+
+// db.redis 服务
+message DBRedisInit {
+  string Address = 1;
+}
+
+// center
+message CenterReqLogin {
+  string ServerId = 1;      // 前端服务
+  uint32 NetId = 2;         // 连接id
+  bool KickPrev = 3;        // 是否踢掉前面
+  int64 UId = 4;           //
+}
+
+message CenterReqLoginAck {
+  int32 Code = 1;
+  string Error = 2;
+  bool IsReconnect = 3; // 是否断线重连
+  string LogicId = 4; // 断线重连时，logicId
+}
+
+message CenterOnSessionClose {
+  int64 UId = 1;
+}
+
+// logic->center
+// 登录完毕
+message OnLogicLogined {
+  int64 UId = 1;
+  string LogicId = 2;
+}
+
+message OnLogicReOnline {
+  int64 UId = 1;
+}
+
+// scene -> logic, logic -> center
+// ack NormalAck
+message  ReqLogout {
+  int64 UId = 1;
+}
+
+// scene -> logic, logic -> center
+// NormalAck
+message  OnLogout {
+  int64 UId = 1;
+}
+
+// gate -> logic
+// enter/reenter
+message LogicLoadPlayer {
+  string ServerId = 1;      // 前端服务
+  uint32 NetId = 2;         // 连接id
+  int64 UId = 3;
+}
+
+message ReqOffline {
+  int64 UId = 1;
+}
+
+// scene -> logic
+message OnLeaveScene {
+  int64 UId = 1;
+  uint64 SceneId = 2;
+}
+
+// 客户端离线(onSessionClose)
+// center -> logic, logic -> scene
+// ack: normalAck
+message OnOffline {
+  int64 UId = 1;
+}
+
+// 断线重连
+// center -> logic, logic -> scene
+// ack: normalAck
+message OnReOnline {
+  int64 UId = 1;
+}
+
+// 请求切线
+// logic -> center
+// ack: NormalAck
+message ReqSwitchLine {
+  int64 UId = 1;
+}
+
+// logic -> center
+message OnSwitchLineEnd {
+  int64 UId = 1;
+  bool Succ = 2;
+}
+
+// some -> logic
+// ack: NormalAck
+message LogicReqSwitchLine {
+  int64 UId = 1;
+  string SceneServer = 2;
+  uint64 SceneId = 3;
+  int32 CfgId = 4;
+  int32 Token = 5;
+  float PosX = 6;
+  float PosY = 7;
+  float PosZ = 8;
+}
+
+// ---- login & logout end ----
+
+// 战斗结果
+// scene -> logic
+message OnFightResult {
+  int64 UId = 1;
+  uint64 SceneId = 2;
+  int32 Result = 3;       // 结果
+  int32 Money = 4;        // 获取金钱
+  int32 Exp = 5;          // 获取经验
+}
+
+message TestSave {
+  PlayerInfo Info = 1;
+}
+
+// logic -> scenem
+message SMAllocScene {
+  int64 UId = 1;      // 玩家id
+  int32 CfgId = 2;    // 场景配置id
+}
+
+message SMAllocSceneAck {
+  string ServiceId = 1;
+  uint64 SceneId = 2;
+  int32 Token = 3;
+  int32 CfgId = 4;
+}
+
+// 查询当前场景列表
+message SMQueryScenes {
+}
+
+message SMAckScenes {
+  repeated uint64 Scenes = 1;
+}
+
+// 请求场景信息(cfgId)
+// ack SMQuerySceneAck
+message SMReqSceneByCfgId {
+  int32 CfgId = 1;
+}
+
+// 查询场景的信息
+message SMQueryScene {
+  uint64 SceneId = 1;
+}
+
+message SMQuerySceneAck {
+  string ServiceId = 1;
+  uint64 SceneId = 2;
+  int32 Token = 3;
+  int32 CfgId = 4;
+}
+
+
+// scene -> scenem
+message SMRefresh {
+  string ServiceId = 1;
+  int32 sceneNum = 2;
+}
+
+message SMOnSceneEnd {
+  uint64 SceneId = 1;
+}
+
+// scenem -> scene
+message  SAllocScene {
+  int32 CfgId = 1;
+  uint64 SceneId = 2;
+  int32 Token = 3;
+}
+
+// ack NormalAck
+
+// logic -> scene
+// enter/reenter
+message SceneEnter {
+  int64 UId = 1;
+  uint64 SceneId = 2;
+  int32 Token = 3;
+
+  string FrontId = 4;
+  uint32 NetId = 5;
+  string LogicId = 6;
+  int32 CfgId = 7;
+  bool SwitchLine = 8;
+
+  float PosX = 9;
+  float PosY = 10;
+  float PosZ = 11;
+  // 阵容信息用单独的消息发送
+}
+
+// logic -> scene
+// ack: NormalAck
+message ChangeScene {
+  int64 UId = 1;
+  uint64 SceneId = 2;
+  int32 Token = 3;
+  int32 CfgId = 4;
+  float PosX = 5;
+  float PosY = 6;
+  float PosZ = 7;
+}
+
+// logic -> scene
+message LogicOffline {
+  int64 UId = 1;
+  uint64 SceneId = 2;
+}
+// ack nil
+
+// logic -> scene
+message SceneLeave {
+  int64 UId = 1;
+  uint64 SceneId = 2;
+}
+// ack nil
+
+// scene -> logic
+// 进入场景成功后二次确认，keepAlive
+// ack NormalAck
+message CheckPlayer2 {
+  int64 UId = 1;
+  uint64 SceneId = 2;
+}
+
+// logic -> scene
+message SceneInitCardFight {
+  int64 UId = 1;
+  string LogicId = 2;
+  uint64 SceneId = 3;
+  int32 Token = 4;
+  repeated cproto.CharCard Cards = 5;
+}
+
+message SceneCardResult {
+  int64 UId = 1;
+  uint64 SceneId = 2;
+  // 胜利者索引
+  // 0: down 1:up
+  int32 Winner = 3;
+}

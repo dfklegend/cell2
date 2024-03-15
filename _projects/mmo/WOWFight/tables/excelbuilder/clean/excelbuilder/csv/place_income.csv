@@ -1,0 +1,5 @@
+﻿领地种类ID,类型名,出现个数,奖励系数
+index,tpyeName,num,rewardsCoefficients
+1,普通领地,0,1
+2,绿色领地,3,2
+3,蓝色领地,1,5

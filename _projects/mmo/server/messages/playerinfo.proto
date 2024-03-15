@@ -1,0 +1,48 @@
+syntax = "proto3";
+package messages;
+option go_package = "github.com/dfklegend/cell2/_examples/mmo/messages";
+
+import "data.proto";
+
+// 玩家数据序列化存档
+message PlayerInfo {
+  BaseInfo Base = 1;
+
+  repeated cproto.CharCard Cards = 2;
+  int32 NextCardId = 3;
+
+  DaySign DaySign = 4;
+}
+
+message Item {
+  int32 CfgId = 1;
+  int32 Uid = 2;
+  int32 Stack = 3;
+}
+
+message Vector3 {
+  float X = 1;
+  float Y = 2;
+  float Z = 3;
+}
+
+message ScenePos {
+  uint64 SceneId = 1;
+  int32 CfgId = 2;
+  int32 Token = 3;
+  Vector3 Pos = 4;
+}
+
+message BaseInfo {
+  int64 UId = 1;      // uid，存储的key
+  string Name = 2;
+  int32 Level = 3;
+  int64 Exp = 4;
+  int64 Money = 5;
+  int32 LoginTimes = 6;
+}
+
+message DaySign {
+  int32 LastDaySigned = 1;   // 上次签到的日期
+}
+

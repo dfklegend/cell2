@@ -1,0 +1,14 @@
+D 11:00:15.5666316 Begin load:csv/test
+D 11:00:15.6165421 csv/test read over!total row:1
+D 11:00:15.6192884 Begin load:csv/item
+D 11:00:15.6240927 csv/item read over!total row:7
+D 11:00:15.6257293 Begin load:csv/equip
+D 11:00:15.6324384 csv/equip read over!total row:7
+D 11:00:15.6347094 Begin load:csv/skill
+D 11:00:15.6389284 (row:6,col:5) is not correct Enum
+D 11:00:15.6409979 (row:12,col:5) is not correct Enum
+D 11:00:15.6431709 csv/skill read over!total row:10
+D 11:00:15.6441646 Begin load:csv/monster
+D 11:00:15.6478666 csv/monster read over!total row:4
+D 11:00:15.6493739 Begin load:csv/monster_template
+D 11:00:15.6535573 csv/monster_template read over!total row:3

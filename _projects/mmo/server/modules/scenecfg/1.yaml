@@ -1,0 +1,9 @@
+---
+monsters:
+  - {Id: 1}
+  - {Id: 2}
+exits:
+  - {X: 0, Z: 0, Radius: 3, To: 1, ToX: 0, ToZ: 0}
+
+
+

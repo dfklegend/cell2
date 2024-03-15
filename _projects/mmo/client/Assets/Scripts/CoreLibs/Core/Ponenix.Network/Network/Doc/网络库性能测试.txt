@@ -1,0 +1,235 @@
+如何进行网络库性能测试
+
+网络部分性能测试
+测试工具
+
+ab
+压测工具LoadRunner
+
+Netty
+https://www.docin.com/p-55272036.html
+
+https://www.zhihu.com/question/307235786/answer/564489490
+
+https://www.zhihu.com/question/271188675/answer/361100738
+1. CPU 负载
+2. 内存用量
+3. 处理延迟
+4. 吞吐量
+5. QPS
+
+
+https://github.com/Qihoo360/evpp/blob/master/docs/benchmark_throughput_vs_asio_cn.md
+比较详细的对比，采用ping-pong测试
+
+里面列举了一些数据，可以作为参考
+
+摘要数据
+
+发送不同大小数据包
+evpp
+单线程，1连接
+size: 1024 49M/s
+size: 2048 91M/s
+size: 4096 176M/s
+
+单线程，100连接
+size: 1024 154M/s
+size: 2048 286M/s
+size: 4096 527M/s
+
+8线程，100连接
+size: 4096 2099M/s
+
+
+our stat
+1连接
+size: 1024 23M/s
+size: 2048 24M/s
+size: 4096 26M/s
+
+100连接
+size: 1024 72M/s
+size: 2048 88M/s
+size: 4096 114M/s
+
+
+
+
+
+http://blog.oraycn.com/ESFramework4.0_Test.aspx
+一个C#库测试数据
+操作系统：Windows Server 2003 Enterprise Edition SP2
+CPU：Pentium Dual-Core CPU E5400 @ 2.70GHz
+
+消息36字节
+1. 3000连接，发送间隔100ms
+    每秒处理消息数量: 26000-30000
+    CPU: 80%
+
+2. 6000连接，发送间隔300ms
+    每秒处理消息数量: 14000-18000
+    CPU: 65%    
+
+3. 疯狂发送
+
+模拟对比
+(区别: 同台机器)
+操作系统：Windows 10 专业版
+CPU：Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz 3.00GHz
+1. 
+    每秒处理消息数量: 960000/40 = 24000
+    CPU: 49%
+
+1. 
+    每秒处理消息数量:680000/40 = 17000
+    CPU: 47%    
+
+
+netty
+http://mindwind.me/craft/atom/nio/benchmark/zh/
+
+基本结论
+和C++库比起来差很多
+和C#比起来差一些
+
+-------------------------
+未来rpc有了再进行对比
+https://github.com/NetEase/pomelo/wiki/pomelo-rpc%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A
+
+数据摘要
+(connector和echo存在request转发)
+场景A
+connector和echo业务进程各1个.
+2个客户端并发, 每隔1ms发起一次request请求(msg='Hello World'), 每个客户端总计发送1w次, 服务器对每个request回复一个200.
+服务器完成2w次请求的时间为14.835s, 平均1348次/s.
+服务器完成一次RPC调用的时间约为: 2~8ms
+在服务器运行过程中: connector进程对CPU的占用平均值为: 91.6% [CPU占用的采样点为: 92%, 94%, 95%, 87%, 84%, 96%, 93%]; echo进程对CPU的占用平均值为: 28.1% [CPU占用的采样点为: 30%, 20%, 33%, 22%, 25%, 46%, 21%]
+在客户端运行过程中: client进程对CPU的占用平均值为: 30.1% [CPU占用的采样点为: 18%, 24%, 25%, 40%, 16%, 49%, 39%]
+场景B
+4个connector和1个echo业务进程.
+4个客户端并发且分别连接1个connector, 每隔1ms发起一次request请求(msg='Hello World'), 每个客户端总计发送1w次, 服务器对每个request回复一个200.
+服务器完成4w次请求的时间为14.866s, 平均2690次/s.
+服务器完成一次RPC调用的时间约为: 1~25ms
+在服务器运行过程中: connector进程对CPU的占用平均值为: 71.8% [CPU占用的采样点为: 75%, 71%, 71%, 74%, 68%]; echo进程对CPU的占用平均值为: 81.3% [CPU占用的采样点为: 81%, 82%, 83%, 79%]
+在客户端运行过程中: client进程对CPU的占用平均值为: 28.0% [CPU占用的采样点为: 28%, 29%, 29%, 26%]
+
+
+对比测试
+也是通过一次转发
+本机测试
+rpc从发送到收到反馈，平均消耗50ms
+客户端统计的，肯定是接近1000 calls/s
+
+统计服务器
+单connector
+5个客户端，5000 calls/s client call cost 50ms
+10个客户端 10000 calls/s client call cost 50ms
+15个客户端 15000 calls/s client call cost 53ms
+20个客户端 20000 calls/s client call cost 60ms
+
+connector x2
+20个客户端 20000 calls/s client call cost 65ms
+
+发送速度增加为 5 calls/ms
+4个客户端 20000 calls/s client call cost 50ms
+5个客户端 24500 calls/s client call cost 450ms
+6个客户端 28000 calls/s client call cost 1300ms
+
+更多的还是服务器的处理能力
+-------------------------------
+our stat
+
+--
+buf: 512
+1连接
+size: 1024 12M/s
+size: 2048 13M/s
+size: 4096 27M/s
+
+100连接
+size: 1024 48M/s
+size: 2048 43M/s
+size: 4096 65M/s
+
+--
+buf: 1500
+1连接
+size: 1024 22M/s
+size: 2048 23M/s
+size: 4096 31M/s
+
+100连接
+size: 1024 83M/s
+size: 2048 90M/s
+size: 4096 134M/s
+
+--
+buf: 3000
+1连接
+size: 1024 21M/s
+size: 2048 42M/s
+size: 4096 42M/s
+
+100连接
+size: 1024 87M/s
+size: 2048 133M/s
+size: 4096 145M/s
+
+--
+buf: 6000
+
+100连接
+size: 1024 62M/s
+size: 4096 190M/s
+
+
+
+Pomelo协议RPC测试
+每个连接间隔10ms发送rpc(可能由于CPU满达不到发送间隔)
+(连接都在主线程发送和处理协议)
+
+连接数: 1000
+消息体: 4096
+RPC平均每秒调用: 5900
+RPC平均响应时间: 0.17s
+CPU: 21%
+
+连接数: 1000
+消息体: 128
+RPC平均每秒调用: 11433
+RPC平均响应时间: 0.11s
+CPU: 21%
+
+连接数: 500
+消息体: 128
+RPC平均每秒调用: 11283
+RPC平均响应时间: 0.05s
+CPU: 17%
+
+连接数: 100
+消息体: 128
+RPC平均每秒调用: 3522
+RPC平均响应时间: 0.03s
+CPU: 5%
+
+await计时并不是很精确
+导致理论上100连接应该可以发送10000 rpc每秒并没达到
+
+
+多开客户端测试
+
+连接数: 100x5
+消息体: 128
+RPC平均每秒调用: 9000x5
+RPC平均响应时间: 7s
+服务器CPU: 31%
+
+连接数: 100x4
+消息体: 128
+RPC平均每秒调用: 3100x4
+RPC平均响应时间: 0.05
+服务器CPU: 24%
+
+500连接数据异常，可能是服务器CPU满之后，
+数据堆叠，形成的IO批处理造成的

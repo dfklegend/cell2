@@ -1,0 +1,78 @@
+---
+nodes:
+  #
+  all-1:
+    StartMode: allinone
+    Address: 127.0.0.1:3001
+    Services:
+      - db-1
+      - center-1
+      - gate-1
+      - gate-2
+      - logic_old-1
+      - logic_old-2
+      - scenem-1
+      - scene-1
+      - scene-2
+      - scene-3
+      - scene-4
+  node-1:
+    StartMode: define
+    Address: 127.0.0.1:3011
+    Services:
+      - db-1
+      - center-1
+      - scenem-1
+      - gate-1
+  node-2:
+    StartMode: define
+    Address: 127.0.0.1:3012
+    Services:
+      - logic_old-1
+      - logic_old-2
+  node-3:
+    StartMode: define
+    Address: 127.0.0.1:3013
+    Services:
+      - logic_old-3
+      - scene-1
+  node-4:
+    StartMode: define
+    Address: 127.0.0.1:3014
+    Services:
+      - scene-2
+
+services:
+  db-1:
+    Type: db
+  center-1:
+    Type: center
+  gate-1:
+    Type: gate
+    Frontend: true
+    WSClientAddress: 127.0.0.1:30011
+    ClientAddress: 127.0.0.1:30021
+  gate-2:
+    Type: gate
+    Frontend: true
+    WSClientAddress: 127.0.0.1:30012
+    ClientAddress: 127.0.0.1:30022
+  logic-1:
+    Type: logic_old
+  logic-2:
+    Type: logic_old
+  logic-3:
+    Type: logic_old
+  scenem-1:
+    Type: scenem
+  scene-1:
+    Type: scene
+  scene-2:
+    Type: scene
+  scene-3:
+    Type: scene
+  scene-4:
+    Type: scene
+
+
+

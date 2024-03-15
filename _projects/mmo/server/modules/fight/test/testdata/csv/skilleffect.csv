@@ -1,0 +1,5 @@
+﻿对应技能id,备注,触发时机,目标类型,,,,,,,,
+skillId,,applyTime,tarType,,,op,arg0,arg1,arg2,arg3,extArgs
+英勇打击,,hit_target_check,target,,,addbuf,1,英勇打击_减防,1,,
+英勇打击,,hit_caster_check,caster,,,addbuf,0.3,英勇打击_加攻击,1,,
+嗜血,,hit_caster_check,caster,,,addbuf,1,bufid,1,,

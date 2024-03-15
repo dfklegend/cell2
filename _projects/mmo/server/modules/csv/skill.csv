@@ -1,0 +1,14 @@
+﻿ID,名称备注,名称,技能类型,,,,,普攻,毫秒,毫秒,,固定伤害,,加成,加成成长,
+id,,name,type,tarType,cost,cd,action,normalAttack,totalTime,hitTime,formulaType,baseDmg,baseDmgLv,powerMultiplier,powerMultiplierLv,subSkills
+普攻,普通近战攻击,普通攻击,Normal,enemy,0,,attack,1,500,160,物理近战,10,0,1,0,
+远程普攻,远程攻击,远程普攻,TargetBullet,enemy,0,,attack,1,500,160,物理近战,10,0,1,0,
+三连击,,三连击,Normal,enemy,10,10,,0,0,0,物理远程,10,5,0.5,,"三连击1,三连击2,三连击3,三连击-嘲讽"
+三连击1,,,Normal,,,,attack,0,500,160,物理远程,20,5,0.5,,
+三连击2,,,Normal,,,,attack,0,500,160,物理远程,20,5,0.5,,
+三连击3,,,Normal,,,,attackleft,0,500,160,物理远程,30,5,0.5,,
+三连击-嘲讽,,,Normal,,,,attackright,0,500,160,无伤害,0,0,0,,
+,,,,,,,,,,,,,,,,
+强力一击,,强力一击,Normal,enemy,10,5,attack,0,500,160,物理近战,200,5,1,,
+无伤害技能,,无伤害,Normal,enemy,10,5,attackleft,0,500,160,无伤害,10,5,0.5,,
+技能3,,技能3,Normal,enemy,10,8,attackright,0,500,160,物理近战,10,5,0.5,,
+技能4,,技能4,Normal,enemy,10,10,attack,0,500,160,物理近战,10,5,0.5,,

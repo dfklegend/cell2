@@ -1,0 +1,8 @@
+---
+monsters:
+  - {Id: 鱼人lv5}
+exits:
+  - {X: 6, Z: 0, Radius: 2, To: 100, ToX: -6, ToZ: 0}
+
+
+
