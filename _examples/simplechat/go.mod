@@ -6,9 +6,9 @@ require (
 	github.com/asynkron/goconsole v0.0.0-20160504192649-bfa12eebf716
 	github.com/asynkron/protoactor-go v0.0.0-20240331075211-49001705a0fe
 	github.com/dfklegend/cell2 v1.0.0
-	github.com/dfklegend/cell2/apimapper v0.0.0-20240315055441-f04ac36aed25
+	github.com/dfklegend/cell2/apimapper v0.0.0-20240402033734-a0a9f3d9335d
 	github.com/dfklegend/cell2/utils v0.0.0-20240315055441-f04ac36aed25
-	google.golang.org/protobuf v1.33.0
+	google.golang.org/protobuf v1.34.2
 )
 
 require (
@@ -67,8 +67,8 @@ require (
 	go.uber.org/multierr v1.8.0 // indirect
 	go.uber.org/zap v1.21.0 // indirect
 	golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa // indirect
-	golang.org/x/net v0.19.0 // indirect
-	golang.org/x/sys v0.15.0 // indirect
+	golang.org/x/net v0.23.0 // indirect
+	golang.org/x/sys v0.18.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	google.golang.org/genproto v0.0.0-20231002182017-d307bd883b97 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20231002182017-d307bd883b97 // indirect
