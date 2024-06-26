@@ -23,7 +23,7 @@ require (
 	github.com/stretchr/testify v1.8.4
 	github.com/yuin/gopher-lua v1.1.0
 	golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa
-	google.golang.org/protobuf v1.31.0
+	google.golang.org/protobuf v1.33.0
 	layeh.com/gopher-luar v1.0.10
 )
 
@@ -32,7 +32,7 @@ require (
 	github.com/Workiva/go-datastructures v1.1.1 // indirect
 	github.com/alessio/shellescape v1.4.1 // indirect
 	github.com/asynkron/gofun v0.0.0-20220329210725-34fed760f4c2 // indirect
-	github.com/aws/aws-sdk-go v1.33.0 // indirect
+	github.com/aws/aws-sdk-go v1.34.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cbroglie/mustache v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
@@ -50,8 +50,8 @@ require (
 	github.com/go-sql-driver/mysql v1.5.0 // indirect
 	github.com/gocarina/gocsv v0.0.0-20221212090504-363f27c9ceb6 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
-	github.com/golang/protobuf v1.5.3 // indirect
-	github.com/google/uuid v1.5.0 // indirect
+	github.com/golang/protobuf v1.5.4 // indirect
+	github.com/google/uuid v1.6.0 // indirect
 	github.com/gorilla/websocket v1.5.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/jmespath/go-jmespath v0.3.0 // indirect
@@ -65,7 +65,6 @@ require (
 	github.com/mattn/go-isatty v0.0.17 // indirect
 	github.com/mattn/go-runewidth v0.0.7 // indirect
 	github.com/mattn/go-sqlite3 v1.14.3 // indirect
-	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
@@ -76,10 +75,10 @@ require (
 	github.com/petermattis/goid v0.0.0-20221215004737-a150e88a970d // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
-	github.com/prometheus/client_golang v1.17.0 // indirect
+	github.com/prometheus/client_golang v1.19.0 // indirect
 	github.com/prometheus/client_model v0.5.0 // indirect
-	github.com/prometheus/common v0.44.0 // indirect
-	github.com/prometheus/procfs v0.11.1 // indirect
+	github.com/prometheus/common v0.48.0 // indirect
+	github.com/prometheus/procfs v0.12.0 // indirect
 	github.com/rifflock/lfshook v0.0.0-20180920164130-b9218ef580f5 // indirect
 	github.com/sirupsen/logrus v1.9.0 // indirect
 	github.com/spf13/afero v1.9.2 // indirect
@@ -103,13 +102,12 @@ require (
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.8.0 // indirect
 	go.uber.org/zap v1.21.0 // indirect
-	golang.org/x/net v0.19.0 // indirect
-	golang.org/x/sys v0.15.0 // indirect
+	golang.org/x/net v0.22.0 // indirect
+	golang.org/x/sys v0.18.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
-	google.golang.org/genproto v0.0.0-20231002182017-d307bd883b97 // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20231002182017-d307bd883b97 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20231002182017-d307bd883b97 // indirect
-	google.golang.org/grpc v1.60.1 // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20240318140521-94a12d6c2237 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240318140521-94a12d6c2237 // indirect
+	google.golang.org/grpc v1.64.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/xmlpath.v2 v2.0.0-20150820204837-860cbeca3ebc // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
